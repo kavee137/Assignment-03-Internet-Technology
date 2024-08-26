@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="this is the description">
+  <meta name="keywords" content="java, html, css, js, go, react, angular">
+  <meta name="author" content="ijse">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href=""> <!-- Favicon -->
+  <link rel="stylesheet" href="../assets/styles/normalize.css">
+  <title>Case-01</title>
+</head>
+<style>
+  .section-red {
+    height: 50%;
+    width: 50%;
+    background-color: red;
+    left: 0;
+    position: absolute;
+  }
+
+  .section-green {
+    height: 50%;
+    width: 50%;
+    background-color: green;
+    right: 0;
+    position: absolute;
+  }
+
+  .section-gold {
+    height: 50%;
+    width: 50%;
+    background-color: gold;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .section-pink {
+    height: 50%;
+    width: 50%;
+    background-color: deeppink;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  }
+
+  /*section inner circles*/
+  body>section>div:first-child {
+    background-color: white;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 100%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+  }
+
+  /*section inner squares*/
+  body>section>div:nth-child(2) {
+    background-color: red;
+    width: 5vw;
+    height: 5vw;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+  }
+
+  /*corner circles*/
+  .corner {
+    height: 15vw;
+    width: 15vw;
+    border-radius: 100%;
+    background-color: yellow;
+    position: absolute;
+  }
+
+  #circle-01 {
+    left: calc(-15vw/2);
+    top: calc(-15vw/2);
+  }
+
+  #circle-02 {
+    top: calc(-15vw/2);
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  #circle-03 {
+    right: calc(-15vw/2);
+    top: calc(-15vw/2);
+  }
+
+  #circle-04 {
+    bottom: calc(-15vw/2);
+    left: calc(-15vw/2);
+  }
+
+  #circle-05 {
+    bottom: calc(-15vw/2);
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  #circle-06 {
+    bottom: calc(-15vw/2);
+    right: calc(-15vw/2);
+  }
+
+  /*center square*/
+  .center-square {
+    background-color: white;
+    width: 15vw;
+    height: 15vw;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+  }
+
+  /*center circle*/
+  .center-square>div {
+    background-color: red;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 100%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+  }
+</style>
+<body>
+  <!--red section-->
+  <section class="section-red">
+    <!--white circle-->
+    <div></div>
+
+    <!--white square-->
+    <div></div>
+  </section>
+
+  <!--green section-->
+  <section class="section-green">
+    <!--white circle-->
+    <div></div>
+
+    <!--white square-->
+    <div></div>
+  </section>
+
+  <!--gold section-->
+  <section class="section-gold">
+    <!--white circle-->
+    <div></div>
+
+    <!--white square-->
+    <div></div>
+  </section>
+
+  <!--pink section-->
+  <section class="section-pink">
+    <!--white circle-->
+    <div></div>
+
+    <!--white square-->
+    <div></div>
+  </section>
+
+  <!--corner circles-->
+  <div id="circle-01" class="corner"></div>
+  <div id="circle-02" class="corner"></div>
+  <div id="circle-03" class="corner"></div>
+  <div id="circle-04" class="corner"></div>
+  <div id="circle-05" class="corner"></div>
+  <div id="circle-06" class="corner"></div>
+
+  <!--center square & circle-->
+  <div class="center-square">
+    <div></div>
+  </div>
+</body>
+</html>
